@@ -14,6 +14,8 @@ body {
 
 .calculator-layout {
   background-color: #dbe5e4;
+  background-color: #425C5A;
+  background-color: #f7f7f7;
   width: 100vw;
   height: 100vh;
   transition: background-color 1s ease;
@@ -38,14 +40,12 @@ body {
   height: 8%;
   color: rgb(142 150 150);
   border-bottom: 1px solid rgb(245, 132, 2);
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .template {
   height: 52%;
-
   display: flex;
   border-top: 1px solid rgb(245, 132, 2);
 }
@@ -60,7 +60,6 @@ body {
 .side-opera {
   width: 20%;
   display: flex;
-
   flex-direction: column;
   justify-content: space-around;
 }
@@ -73,7 +72,8 @@ button:focus {
   outline: none;
 }
 .numbers:hover {
-  background-color: rgb(85, 82, 83);
+  background-color: #A2BFBD;
+  color: rgb(245, 132, 2);
 }
 .numbers {
   font-size: 16px;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {evaluate} from 'mathjs';
 import './cal.css';
 
 function Numbers() {
@@ -20,10 +21,10 @@ function Numbers() {
     const Evaluate =  (e) => {
         try {
             setnumber(
-                String(eval(number)).length > 3 &&
-                    String(eval(number)).includes(".")
-                    ? String(eval(number).toFixed(4))
-                    : String(eval(number))
+                String(evaluate(number)).length > 3 &&
+                    String(evaluate(number)).includes(".")
+                    ? String(evaluate(number).toFixed(4))
+                    : String(evaluate(number))
             );
         } catch  {
             console.log(e);
@@ -47,7 +48,7 @@ function Numbers() {
 
 
                 {/*display of input*/}
-                <div id="show" style={{backgroundColor:(classs===false?"#464141":"rgb(81 93 92)"),color:(classs===true?"white":"rgb(245, 132, 2)")}} >{number}</div>
+                <div id="show" style={{backgroundColor:(classs===false?"#464141":"#A2BFBD"),color:(classs===true?"white":"rgb(245, 132, 2)")}} >{number}</div>
 
 
 
